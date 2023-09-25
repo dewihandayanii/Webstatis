@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  body img {
+    background-attachment: fixed;
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body {
+    background-color:chocolate;
+    font-family: "Times New Roman", Times, serif;
+  }
+  header {
+    background-color:saddlebrown;
+    width: 1350px;
+    margin: auto;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+  }
+  article {
+    background-color:cornsilk;
+    width: 1150px;
+    margin: auto;
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+  }
+  
+  article img {
+    float: left;
+    margin-left: 80px;
+    margin-right: 35px;
+    margin: 5px 5px 5px 0;
+    width: 400px;
+    height: 400px;
+  }
+  
+  footer {
+    background-color: saddlebrown;
+    width: 1500px;
+    margin: center;
+    padding: 20px;
+    font-size: 20px;
+  }
+  footer p {
+    color: white;
+    text-align: center;
+  }
+  h1 {
+    background-color:darksalmon;
+    text-align: center;
+    font-size: 30px;
+    width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+  h2 {
+    text-align: left;
+    font-size: 22px;
+    padding-left: 10px;
+  }
+  ul{ 
+    width: 1300px;
+    margin: auto;
+    font-size: 20px;
+    padding-left: 40px;
+  }
+  table {
+    width: 85%;
+    text-align: center;
+  }
+  td{
+    text-align: left;
+    padding: 30px;
+    background-color:khaki;
+  }
+  th{
+    background-color:chocolate;
+  }
+  .tabel1 {
+    width: 38%;
+  }
+  
+  .tr1 {
+    text-align: left;
+    font-size: 26px;
+    border-style: solid;
+    border-collapse: collapse;
+    border-color:cornsilk;
+    background-color: cornsilk;
+    border: 1;
+  }
+  
+  .tr2 {
+    text-align: left;
+    font-size: 26px;
+    border-style: solid;
+    border-collapse: collapse;
+    border-color:cornsilk;
+    background-color: cornsilk;
+    border: 1;
+  }
+  
+  .tr3 {
+    border-style: solid;
+    border-collapse: collapse;
+    border-color:cornsilk;
+    border: 1;
+  }
+  
+  .img1 {
+    width: 150px;
+    height: 200px;
+  }
