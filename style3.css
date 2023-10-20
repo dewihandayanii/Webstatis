@@ -1,0 +1,135 @@
+/*ini adalah comment*/
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Monotype Corsiva;
+    color: white;
+}
+
+img {
+    width: 30%; /*ukuran gambar*/
+   
+}
+
+/*paragraf*/
+p {
+    background-color: white;
+    color: black;
+    font-family: MV Boli;
+    text-align: justify;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+}
+
+ul {
+    margin-left: 8%;
+    margin-right: 8%;
+    color: black;
+    font-family: MV Boli;
+    text-align: left;
+}
+
+/*link*/
+a {
+    color: white;
+}
+
+table {
+    padding-left: 10px;
+    width: 20%;
+    color: black;
+    border-left: 2px solid sienna;
+    margin-left: 12px;
+    font-family: MV Boli;
+}
+
+
+.wrapper-content {
+    background: white;
+    text-align: center;
+    color: black;
+    
+}
+
+/*class*/
+.pback {
+    border-radius: 10px;
+    background-color: tan;
+    color: black;
+    text-align: center;
+    padding-bottom: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 20px;
+}
+
+
+.back {
+    background-image: url(Images/2.jpg);
+    background-size: cover;
+    padding-top: 2%;
+    padding-bottom: 40%;
+    background-attachment: fixed;
+}
+
+.head {
+    border-radius: 10px;
+    background-color: tan;
+    color: black;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 30px;
+}
+
+.head2 {
+    color: black;
+    background-color:darkkhaki;
+    text-align: center;
+    font-size: 25px;
+}
+
+.head3 {
+    border-radius: 10px;
+    background-color:tan;
+    color: black;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 45px;
+}
+h3{
+    color: black;
+}
+.par {
+    background-color: tan;
+    color: black;
+    padding-top: 0;
+    padding-left: 10px;
+    border-left: 2px solid sienna;
+    margin-left: 12px;
+}
+
+.wrapper-list {
+    background-color:tan; 
+}
+
+.kel {
+    background-color:darkkhaki;
+    color: black;
+    padding-left: 10px;
+    padding-bottom: 1%;
+    text-align: center;
+    border: 2px solid black;
+}
+.try{
+    text-align: justify;
+    margin-left: 25%;
+    margin-right: 25%;
+}
