@@ -1,0 +1,187 @@
+body {
+    height: 100%;
+    position: relative;
+    overflow: auto;
+    background-attachment: fixed;
+    backdrop-filter: blur(01px);
+    padding-bottom: 0%;
+    padding-top: 0%;
+    height: auto;
+    text-align: justify;
+}
+
+
+.back {
+    background-image: url(Images/cov2.jpg);
+    background-size: cover;
+    padding-top: 2%;
+    padding-bottom: 40%;
+    height: 300px;
+    background-attachment: fixed;
+}
+
+p {
+    background-color: white;
+    color: black;
+    font-family: MV Boli;
+    text-align: justify;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+}
+
+.head {
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    color: black;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 30px;
+}
+
+.head2 {
+    border-radius: 10px;
+    background-color: teal;
+    color: black;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 60px;
+    font-family: Monotype Corsiva;
+}
+
+.head3 {
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    color: black;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 45px;
+}
+
+.fw-900 {
+    font-weight: 900;
+    font-family: 'Titillium-Web-900', sans-serif;
+    color: navy;
+}
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nav-link {
+    height: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    width: 100%;
+    font-family: 'Titillium-Web-700', sans-serif;
+    color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+table,
+td {
+    border: 2px solid;
+    margin: auto;
+    padding-left: 10px;
+}
+
+th {
+    text-align: center;
+    border: 2px solid;
+    margin: auto;
+}
+
+table {
+    width: 65%;
+}
+
+.visimisi {
+    text-align: justify;
+    color: black;
+    font-size: 100%;
+    font-family: Helvetica, sans-serif;
+}
+
+#C {
+    background-color: white;
+    width: auto;
+    height: auto;
+    border: 5px solid #007bff;
+    color: #007bff;
+    padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#D {
+    background-color: white;
+    width: auto;
+    height: auto;
+    border: 5px solid #007bff;
+    color: black;
+    padding: 0px;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#li {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.fa-brands-fa-facebook-fa-2xl {
+
+    color: #3b5998;
+    margin-left: 5%;
+}
+
+.fa-brands-fa-instagram-fa-2xl {
+    color: black;
+    margin-left: 3%;
+}
+
+.fa-tiktok-fa-2xl {
+    color: black;
+    margin-left: 2%;
+}
+
+.Namakel {
+    font-family: monospace;
+    color: black;
+    padding-left: 10px;
+    padding-bottom: 1%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: khaki;
+
+}
+
+.piw {
+    background-color: khaki;
+    float: left;
+    Margin-left: 5px;
+    margin-right: 35px
+}
+
+.nih{
+    font-family: MV Boli;
+    text-align: justify;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+}
