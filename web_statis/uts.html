@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="Images/download.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" />
+  <link rel="stylesheet" href="styleuts2.css" />
+  <!--icons-->
+  <script src="https://kit.fontawesome.com/8693e748c0.js" crossorigin="anonymous"></script>
+  <title>Tim Nasional Indonesia</title>
+</head>
+
+<body>
+  <!-- Navbar START -->
+  <nav>
+    <div class="nav-logo">
+      <a href="#">
+        <img class="img" width="60" height="100" src="Images/garuda.png" alt="Logo" />
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li class="link"><a href="#">Home</a></li>
+      <li>
+        <a class="judulharga" href="#" style="color: #fff">About us ⌵</a>
+        <ul class="dropdown">
+          <li id="link1" class="link">
+            <a href="#" style="font-size: 13px">Profil</a>
+          </li>
+          <li id="link2" class="link">
+            <a href="#" style="font-size: 13px">Pemain</a>
+          </li>
+        </ul>
+      </li>
+      <li id="link4" class="link"><a href="#">Last Match</a></li>
+      <li id="link3" class="link"><a href="#">Upcoming Match</a></li>
+    </ul>
+    <a href="infotiket.html"><button class="btn">Book Ticket</button></a>
+  </nav>
+  <!-- Navbar END -->
+
+  <!-- Tombol untuk mengontrol tampilan sidebar -->
+  <div class="toggle-btn" onclick="toggleSidebar()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="sidenav">
+    <a href="Gallery.html">Gallery</a>
+    <a href="About Editor.html">Editor</a>
+  </div>
+
+  <!-- Konten lainnya tetap sama -->
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="Images/gmbb.jpg" style="width: 1348px; height:700px" />
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="Images/gmb2.jpg" style="width: 1348px; height:700px" />
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="Images/gmb3.jpg" style="width: 1348px; height:700px" />
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="Images/gmb4.jpg" style="width: 1348px; height:700px" />
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br />
+
+  <!-- The dots/circles -->
+  <div style="text-align: center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  </section>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+
+  <section id="home">
+    <main class="content"></main>
+  </section>
+  <div style="*{ margin: 0; padding: 0;}
+  body{ background: #0084ff; font-family: Monotype Corsiva;font-size: larger; width: 80%; margin: 0 auto;}
+  .container{ display: flex; align-items: center; background: #eee; margin-top: 40px;}
+  .container span{ position: relative; display: inline-block; flex-shrink: 0; padding: 8px 20px; background: #f00; 
+  color: #fff; overflow: hidden; clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);}
+  .scroll-left span{ clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);}" class="container scroll-left">
+    <marquee style="font-family: Monotype Corsiva;font-size: 70px;" behavior="" direction="left">Selamat Datang di Situs
+      Timnas Senior Indonesia: Bersama Menuju Puncak Prestasi!</marquee>
+  </div>
+
+  <header class="container">
+    <div class="content">
+      <span class="blur"></span>
+      <span class="blur"></span>
+      <h1>Experience Thrilling Moments </h1>
+      <h1>FOOTBAL CLUB</h1>
+      <p style="text-align: justify;">
+        Bergabunglah dengan semangat dan kebanggaan sepakbola Indonesia. Di sini, temukan kisah kejayaan, jadwal
+        pertandingan, dan profil pemain. Dukungan Anda membangkitkan kekuatan kami. Mari bersama, wujudkan prestasi
+        membanggakan untuk Tanah Air! Terima kasih atas dukungan Anda.
+      </p>
+    </div>
+
+  </header>
+
+
+  <!-- Profil START -->
+  <section class="profil-container">
+    <h2 class="header">Profil</h2>
+    <div class="pricing" style="width: 100%; margin-left: 4%;">
+      <div class="card">
+        <div class="content">
+          <h1>PROFIL TIMNAS SENIOR</h1><br>
+          <h2>PELATIH</h2>
+          <h3>SHIN TAE-YONG</h3>
+
+          <h2>ASISTEN PELATIH</h2>
+          <h3>NOVA ARIANTO</h3>
+
+          <h2>KAPTEN</h2>
+          <h3>ASNAWI MANGKUALAM</h3>
+        </div>
+        <img class="image1" src="Images/pro.jpg" alt="profil">
+      </div>
+    </div>
+  </section><br><br><br><br>
+  <!-- Profil END-->
+
+  <!-- Pemain START -->
+
+  <section class="header">
+    <h2 class="pemain-header">Pemain</h2>
+    <div class="pemain-container">
+      <div class="pricing">
+        <div class="card">
+          <div class="content">
+            <h3>Penjaga Gawang</h3>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Nadeo Argawinata
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Ernando Ari Sutaryadi
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Muhammad Riyandi
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h3>Pemain Belakang</h3>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Edo Febriansyah
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Asnawi Mangkualam
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Jordi Amat
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Sandy Walsh
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Wahyu Prasetyo
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Rizky Ridho Ramadhani
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Elkan Baggott
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Shayne Pattynama
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Pratama Arhan
+            </p>
+          </div>
+        </div>
+        <br><br><br>
+        <div class="card">
+          <div class="content">
+            <h3>Pemain Tengah</h3>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Saddil Ramdani
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Rachmat Irianto
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Egy Maulana Vikri
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Adam Alis
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Ricky Kambuaya
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Marc Klok
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Arkhan Fikri
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Witan Sulaeman
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h3>Pemain Depan</h3>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Dendy Sulistiawan
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Dimas Drajad
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Ramadhan Sananta
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Rafael Struick
+            </p>
+            <p>
+              <i class="fa-solid fa-futbol"></i>
+              Hokky Caraka
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Pemain END -->
+
+    <!-- LastMatch START -->
+    <section class="container">
+      <h2 class="header">Last Match</h2>
+      <h3 style="text-align: center;">OUR <span>LAST</span> MATCH</h3>
+
+      <div class="LastMatchContent1">
+        <div class="card">
+          <div class="match">
+            <p>Friendly Match</p>
+            <p>19 Juni 2023</p>
+            <ul>
+              <li><img src="Images/argen.png" alt="argen" style="width: 150px; height:75px"></li>
+              <li>2 - 0</li>
+              <li><img src="Images/indo.png" alt="indo" style="width: 150px; height:75px"></li>
+            </ul>
+            <br>
+            <p>Argentina VS Indonesia</p>
+            <p>Gelora Bung Karno Stadium</p><br>
+          </div>
+          <button>Match Statistic</button>
+        </div>
+      </div>
+
+
+      <div class="LastMatchContent">
+        <div class="card">
+          <div class="match">
+            <p>Friendly Match</p>
+            <p>8 September 2023</p>
+            <ul>
+              <li><img src="Images/turkm.jpg" alt="turkm" style="width: 150px; height:75px"></li>
+              <li>0 - 2</li>
+              <li><img src="Images/indo.png" alt="indo" style="width: 150px; height:75px"></li>
+            </ul>
+            <br>
+            <p>Turkmenistan VS Indonesia</p>
+            <p>Gelora Bung Tomo Stadium</p><br>
+          </div>
+          <button>Match Statistic</button>
+        </div>
+      </div>
+      </div>
+
+
+      <div class="LastMatchContent1">
+        <div class="card">
+          <div class="match">
+            <p>World Cup Qualifiers - Leg 1</p>
+            <p>12 Oktober 2023</p>
+            <ul>
+              <li><img src="Images/indo.png" alt="indo" style="width: 150px; height:75px"></li>
+              <li>6 - 0</li>
+              <li><img src="Images/brune.png" alt="brune" style="width: 150px; height:75px"></li>
+            </ul>
+            <br>
+            <p>Indonesia VS Brunei Darussalam</p>
+            <p>Gelora Bung Karno Stadium</p><br>
+          </div>
+          <button>Match Statistic</button>
+        </div>
+      </div>
+
+      <div class="LastMatchContent">
+        <div class="card">
+          <div class="match">
+            <p>World Cup Qualifiers - Leg 2</p>
+            <p>17 Oktober 2023</p>
+            <ul>
+              <li><img src="Images/brune.png" alt="brune" style="width: 150px; height:75px"></li>
+              <li>0 - 6</li>
+              <li><img src="Images/indo.png" alt="indo" style="width: 150px; height:75px"></li>
+            </ul>
+            <br>
+            <p>Brunei Darussalam VS Indonesia</p>
+            <p>Sultan Hassanal Bolkiah Stadium</p><br>
+          </div>
+          <button>Match Statistic</button>
+        </div>
+      </div>
+      <!-- LastMatch END -->
+      <br><br><br><br><br><br>
+
+      <!-- UpcomingMatch START -->
+      <section class="schedule-container">
+        <h2 class="column" style="text-align: center;">Upcoming Match</h2>
+        <h3 style="text-align: center;">Match<span> Schedule</span></h3>
+        <div class="schedule">
+          <div class="scheduleTitle">
+            <div class="UpcomingMatch"><br><br><br>
+
+            </div>
+            <div class="title2">
+              <a href="infotiket.html"><button>Book Ticket</button></a>
+            </div>
+          </div>
+
+          <div class="scheduleContent">
+            <div class="card">
+              <div class="teams">
+                <ul>
+                  <li><img src="Images/iraq.jpg" alt="iraq" style="width: 150px; height:75px"></li>
+                  <li>VS</li>
+                  <li><img src="Images/indo.png" alt="indo" style="width: 150px; height:75px"></li>
+                </ul>
+              </div>
+              <div class="description">
+                <h4>Iraq VS Indonesia</h4>
+                <h4>Basra International Stadium</h4>
+                <h4>16 November 2023</h4>
+                <div class="watch"></div>
+                <button>Watch Schedule</button>
+                <a href="infotiket.html"><button>Get Ticket</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="schedule">
+          <div class="scheduleTitle">
+            <div class="UpcomingMatch"><br><br><br>
+
+            </div>
+            <div class="title2">
+              <a href="infotiket.html"><button>Book Ticket</button></a>
+            </div>
+          </div>
+
+          <div class="scheduleContent">
+            <div class="card">
+              <div class="teams">
+                <ul>
+                  <li><img src="Images/pilip.jpg" alt="pilip" style="width: 150px; height:75px"></li>
+                  <li>VS</li>
+                  <li><img src="Images/indo.png" alt="indo" style="width: 150px; height:75px"></li>
+                </ul>
+              </div>
+              <div class="description">
+                <h4>Philippines VS Indonesia</h4>
+                <h4>Rizal Memorial Stadium, Manila</h4>
+                <h4>21 November 2023</h4>
+                <div class="watch"></div>
+                <button>Watch Schedule</button>
+                <a href="infotiket.html"><button>Get Ticket</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div><br><br><br>
+
+        <!-- UpcomingMatch section END -->
+
+
+        <!-- Footer -->
+        <footer class="container">
+          <div class="column">
+            <p>
+              OUR SOCIAL MEDIA!
+            </p>
+            <div class="socials">
+              <a href="https://youtube.com/c/PSSITV"><i class="ri-youtube-line"></i></a>
+              <a href="https://www.instagram.com/pssi/?hl=en"><i class="ri-instagram-line"></i></a>
+              <a href="https://x.com/PSSI?s=20"><i class="ri-twitter-line"></i></a>
+              <a href="https://www.facebook.com/pssi/?locale=id_ID"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+          </div>
+
+          <a class="gotopbtn" href="#"><i class="ri-arrow-up-s-line"></i></i></a>
+        </footer>
+
+        <div class="copyright">
+          Copyright © 2023 Dewi Handayani
+        </div>
+
+
+        <script src="scriptuts.js"></script>
+</body>
+
+</html>

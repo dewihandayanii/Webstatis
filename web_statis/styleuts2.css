@@ -1,0 +1,849 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color:#323232;
+  color: wheat;
+}
+
+nav {
+  max-width: 1200px;
+  height: 100px;
+
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.nav-logo {
+  max-width: 200px;
+}
+
+
+
+ul li ul.dropdown li {
+  display: block;
+}
+
+ul li ul.dropdown {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+.judulharga ul li a:hover {
+  background: #18181b;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+
+.link a {
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #fff;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #1d4ed8;
+  transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+  width: 70%;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color:goldenrod;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Gaya untuk tombol toggle */
+.toggle-btn {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.toggle-btn span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color:#fff;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+
+/* Gaya untuk sidebar */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:tan;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .close-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*sidebar END*/
+
+.image1 {
+ 
+  width: 650px;
+  height: 450px;
+  float: right;
+
+}
+
+.profil-container {
+  text-align: left;
+  margin-left: 2%;
+  padding-right: 5%;
+  font-size: 80%;
+  padding-top: 10px;
+  
+}
+
+.pemain-header {
+  font-size: 250%;
+  text-align: center;
+}
+
+.pemain-container {
+  margin-left: 26%;
+}
+
+/* LastMatch Section */
+.LastMatch {
+  background-color: black;
+  color: wheat;
+  text-align: center;
+}
+
+.LastMatchTitle {
+  text-align: center;
+}
+
+.LastMatchContent .card {
+  display: flex;
+  width: 450px;
+  flex-direction: column;
+  background-color:#27272a;
+  padding: 20px 30px;
+  margin-right: 30px;
+}
+
+.LastMatchContent {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  
+  margin-left: 125px;
+  margin-right: 30px;
+}
+
+.LastMatchContent .match {
+  width: 100%;
+
+}
+
+.LastMatchContent ul {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin-top: 50px;
+  font-size: 25px;
+
+}
+
+.LastMatchContent1 .card {
+  display: flex;
+  width: 450px;
+  flex-direction: column;
+  background-color:#27272a;
+  padding: 20px 30px;
+  margin-right: 30px;
+}
+
+.LastMatchContent1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  float: left;
+  margin-left: 125px;
+  margin-right: 30px;
+}
+
+.LastMatchContent1 .match {
+  width: 100%;
+
+}
+
+.LastMatchContent1 ul {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin-top: 50px;
+  font-size: 25px;
+
+}
+
+.LastMatchContent1 button {
+  background-color: transparent;
+  border: 3px solid goldenrod;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: white;
+  margin: auto;
+}
+
+.LastMatchContent button {
+  background-color: transparent;
+  border: 3px solid goldenrod;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: white;
+  margin: auto;
+}
+
+.LastMatchContent1 button:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.LastMatchContent button:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.LastMatch h5 {
+  font-size: 25px;
+}
+
+.LastMatch h3 {
+  font-size: 30px;
+}
+
+.LastMatch span {
+  color:goldenrod;
+}
+
+.match {
+  text-align: center;
+}
+
+/*LastMatch*/
+
+
+/*Upcoming Match START*/
+/* Schedule Section */
+
+
+
+.schedule{
+  padding: 0 4%;
+  color: #fff;
+  margin-top: 100px;
+}
+
+.scheduleTitle{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.schedule span{
+  color: goldenrod;
+}
+
+.scheduleTitle h5{
+  font-size: 25px;
+}
+
+.scheduleTitle h3{
+  font-size: 35px;
+}
+
+.schedule button{
+  background-color: transparent;
+  border: 3px solid goldenrod;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #fff;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.schedule button:hover{
+  background-color: grey;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.scheduleContent{
+  margin-top: 50px;
+}
+
+.scheduleContent .card{
+  padding: 30px;
+  border: 3px solid goldenrod;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.scheduleContent .card .teams ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.scheduleContent .card .teams ul li{
+  margin-right: 30px;
+}
+
+.scheduleContent .card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.scheduleContent .description{
+  text-align: center;
+  padding-right: 20%;
+}
+
+.scheduleContent .description h3{
+  color: goldenrod;
+}
+/*Upcoming Match END*/
+
+.btn:hover {
+  background-color:steelblue;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+
+.blur {
+  position: absolute;
+  box-shadow: 0 0 1000px 50px goldenrod;
+  z-index: -100;
+}
+
+header {
+  position: relative;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+header .content h4 {
+  margin-bottom: 1rem;
+  color: #ccc;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+header .content h1 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+header .content h1 span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+header .content p {
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+header .image {
+  position: relative;
+}
+
+header .image::before {
+  content: "o";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 38rem;
+  font-weight: 400;
+  line-height: 20rem;
+  color: #1d4ed8;
+  opacity: 0.2;
+  z-index: -100;
+}
+
+header .image img {
+  max-width: 600px;
+  margin: auto;
+}
+
+section .header {
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.features {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.features .card {
+  background-color: #27272a;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.features .card:hover {
+  background-color: #323232;
+  border-color: #fff;
+}
+
+.features .card span {
+  display: inline-block;
+  background-color: #1e40af;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.features .card h4 {
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.features .card p {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.features .card a {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.features .card a:hover {
+  color: #1e40af;
+}
+
+.sub-header {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  color: #ccc;
+}
+
+.pricing {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.pricing .card {
+  padding: 3rem 2rem;
+  background-color: #27272a;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.pricing .card:hover {
+  background-color: #323232;
+  border-color: #fff;
+}
+
+.pricing .card .content {
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
+.pricing .card h4 {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.pricing .card h3 {
+  color: #fff;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 2px solid #fff;
+}
+
+.pricing .card p {
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.pricing .card p i {
+  color: #ccc;
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+}
+
+.pricing .card button {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.pricing .card button:hover {
+  background-color: #1e40af;
+  border-color: #1e40af;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.gotopbtn {
+  position: fixed;
+  flex-direction: column;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 30px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 415px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+
+@media (width < 900px) {
+  .nav-links {
+    display: none;
+  }
+
+  header {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  header .image {
+    grid-area: 1/1/2/2;
+  }
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    grid-template-columns: 1fr 200px;
+  }
+}
+
+@media (width < 600px) {
+  header .image::before {
+    display: none;
+  }
+
+  .features {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .pricing {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer {
+    grid-template-columns: 1fr 150px;
+  }
+}
+
+footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 400px repeat(3, 1fr);
+  gap: 2rem;
+  background-color: goldenrod;
+  width: 1200px;
+}
+
+footer .column .logo {
+  max-width: 200px;
+  margin-bottom: 2rem;
+}
+
+footer .column p {
+  color:black;
+  margin-bottom: 2rem;
+}
+
+footer .column .socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .column .socials a {
+  color: black;
+  border: 1px solid black;
+  padding: 5px 10px;
+  font-size: 1.25rem;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+}
+
+footer .column .socials a:hover {
+  color: black;
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+footer .column h4 {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+footer .column > a {
+  display: block;
+  color: #ccc;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+footer .column > a:hover {
+  color: #1d4ed8;
+}
+
+.copyright {
+  width: 1200px;
+  background-color: goldenrod;
+  margin: auto;
+  padding: 1rem;
+  color: black;
+  font-size: 0.8rem;
+  text-align: center;
+}
